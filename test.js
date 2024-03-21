@@ -7,15 +7,32 @@ function sum100() {
     console.log(sum);
 }
 
-function colorMix(color1, color2) {
-    if (color1 === 'red' && color2 === 'yellow') {
-      return 'orange';
-    } else if (color1 === 'red' && color2 === 'blue') {
-        return 'purple';
-        }
-    else if (color1 === 'yellow' && color2 === 'blue') {
-        return 'green';
-    } else {
-        return 'invalid';
+function colorMix() {
+    let color1 = prompt("Color 1:")
+    let color2 = prompt("Color 2:")
+
+    switch(color1,color2) {
+
+
+        case 'red' && 'yellow':
+            return 'orange';
+            break;
+
+        case 'red' && 'blue':
+            return 'purple';
+            break;
+
+        case 'yellow' && 'blue':
+
+            return 'green';
+            break;
+
+        default:
+            return 'Invalid color';
+            break;
     }
-}
+
+
+  }
+  
+  console.log(colorMix())
